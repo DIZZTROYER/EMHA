@@ -1,0 +1,22 @@
+Return-Path: <alice@gmail.com>
+Received: from mail-oi1-f65.google.com (mail-oi1-f65.google.com. [209.85.167.65])
+        by mx.outlook.com with ESMTPS id a21si1234567qkj.234.2025.09.22.07.45.12
+        for <bob@outlook.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 22 Sep 2025 07:45:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+        b=TESTSIGNATURE==
+From: Alice <alice@gmail.com>
+To: Bob <bob@outlook.com>
+Subject: Lunch today?
+Date: Mon, 22 Sep 2025 07:44:50 -0700
+Message-ID: <1234567890abcdef@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hey Bob,  
+Want to grab lunch around 12?  
+- Alice

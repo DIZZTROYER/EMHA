@@ -1,0 +1,24 @@
+Return-Path: <newsletter@corp-example.com>
+Received: from mail.corp-example.com (mail.corp-example.com. [198.51.100.25])
+        by mx.recipient.com with ESMTPS id def456abc7890
+        for <student@university.edu>;
+        Mon, 22 Sep 2025 10:15:00 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=corp-example.com; s=selector1;
+        h=from:to:subject:date:message-id;
+        bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+        b=TESTSIGNATURE==
+From: Corp Example <newsletter@corp-example.com>
+To: student@university.edu
+Subject: September Updates
+Date: Mon, 22 Sep 2025 10:14:00 +0000
+Message-ID: <newsletter20250922@corp-example.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<h2>Corp Example News</h2>
+<p>Here are your September updates.</p>
+</body>
+</html>

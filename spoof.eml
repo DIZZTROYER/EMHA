@@ -1,0 +1,16 @@
+Return-Path: <billing@paypal.com>
+Received: from unknownhost.fakeisp.net (203.0.113.45) by victimmail.local with SMTP;
+        Mon, 22 Sep 2025 09:00:00 +0000
+From: "PayPal Support" <billing@paypal.com>
+To: user@example.com
+Subject: Important: Verify your account
+Date: Mon, 22 Sep 2025 09:00:00 +0000
+Message-ID: <spoof1234@fakeisp.net>
+MIME-Version: 1.0
+Content-Type: text/plain
+
+Dear Customer,  
+We detected unusual activity. Please verify your account immediately:  
+http://malicious-site.example/verify  
+
+PayPal Security
