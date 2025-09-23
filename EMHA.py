@@ -23,7 +23,7 @@ def extract_basic_headers(msg):
 
 def trace_path(msg):
     received = msg.get_all('Received') or []
-    logging.info("\n=== Received Path (Newest to Oldest) ===")
+    logging.info("\n===== Received Path (Newest to Oldest) =====")
     for hop in received:
         ip_match = re.search(r'\[(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]', hop) or re.search(r'\[([a-fA-F0-9:]+)\]', hop)
         time_match = re.search(r';\s*(.*)$', hop)
@@ -41,7 +41,7 @@ def check_authentication(msg):
         logging.warning("No From domain - High spoofing risk.")
         return
 
-    logging.info("\n=== Authentication Checks ===")
+    logging.info("\n===== Authentication Checks =====")
     
     # SPF
     try:
@@ -95,7 +95,7 @@ def flag_risks(msg):
         logging.warning("Path Risk: Short chain - Forgery possible.")
 
 def main():
-    parser = argparse.ArgumentParser(description="XPO 1.0: Email Header Analyzer")
+    parser = argparse.ArgumentParser(description="EMHA X.0: Email Header Analyzer")
     parser.add_argument('--eml', required=True, help="Path to .eml file")
     args = parser.parse_args()
 
@@ -112,4 +112,5 @@ def main():
         logging.error(f"Error parsing email: {e}")
 
 if __name__ == "__main__":
+
     main()
