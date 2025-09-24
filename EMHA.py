@@ -21,7 +21,7 @@ def extract_basic_headers(msg):
         'Reply-To': msg['Reply-To'],
         'X-Mailer': msg['X-Mailer']
     }
-    logging.info("=== Basic Headers ===")
+    logging.info("===== Basic Headers =====")
     for key, value in headers.items():
         logging.info(f"{key}: {value or 'Not Present'}")
 
@@ -108,3 +108,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
