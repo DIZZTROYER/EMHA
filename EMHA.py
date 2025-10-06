@@ -54,6 +54,7 @@ def check_authentication(msg):
         return
 
     logging.info("\n===== Authentication Checks =====")
+    
     # SPF
     origin_ip = find_originating_ip(msg.get_all('Received') or [])
     envelope_from = msg['Return-Path'] or msg['From']
@@ -108,4 +109,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
